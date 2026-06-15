@@ -1,11 +1,35 @@
+const {
+  default: makeWASocket,
+  useMultiFileAuthState,
+  DisconnectReason
+} = require("@whiskeysockets/baileys");
 
-const http = require('http');
+async function startBot() {
+  const { state, saveCreds } = await useMultiFileAuthState("auth_info");
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200);
-  res.end("Naveed MD Live");
-});
+  const sock = makeWASocket({
+    auth: state,
+    printQRInTerminal: true
+  });
 
-server.listen(process.env.PORT || 3000, () => {
-  console.log("Server Running");
-});
+  sock.ev.on("creds.update", saveCreds);
+
+  sock.ev.on("connection.update", (update) => {
+    const { connection, lastDisconnect } = update;
+
+    if (connection === "open") {
+      console.log("✅ WhatsApp Connected");
+    }
+
+    if (connection === "close") {
+      const shouldReconnect =
+        lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut;
+
+      if (shouldReconnect) {
+        startBot();
+      }
+    }
+  });
+}
+
+startBot();
