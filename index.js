@@ -1,8 +1,11 @@
 
-console.log("Naveed MD Bot Running OK");
-
 const http = require('http');
 
-http.createServer((req, res) => {
-  res.end("Server OK");
-}).listen(process.env.PORT || 3000);
+const server = http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end("Naveed MD Live");
+});
+
+server.listen(process.env.PORT || 3000, () => {
+  console.log("Server Running");
+});
