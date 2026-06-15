@@ -1,0 +1,10 @@
+{
+  "name": "naveed-md",
+  "version": "1.0.0",
+  "description": "Public WhatsApp Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}
