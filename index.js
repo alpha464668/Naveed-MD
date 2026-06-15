@@ -1,8 +1,22 @@
+const { default: makeWASocket, useMultiFileAuthState } = require("@whiskeysockets/baileys");
 
-const http = require('http');
+async function startBot() {
+  const { state, saveCreds } = await useMultiFileAuthState("auth");
 
-http.createServer((req, res) => {
-  res.end("Naveed MD Bot Running");
-}).listen(process.env.PORT || 3000);
+  const sock = makeWASocket({
+    auth: state,
+    printQRInTerminal: false
+  });
 
-console.log("Bot Started");
+  sock.ev.on("connection.update", (update) => {
+    const { connection } = update;
+
+    if (connection === "open") {
+      console.log("Naveed MD Bot Connected");
+    }
+  });
+
+  sock.ev.on("creds.update", saveCreds);
+}
+
+startBot();
