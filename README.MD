@@ -25,4 +25,41 @@ STATUS| Online ✅
 
 🚀 DEPLOYMENT
 
-Coming Soon...
+Coming Soon...---
+
+🍴 QUICK ACCESS
+
+<p align="center"><a href="https://github.com/naveedahmed35581-arch/Naveed-MD/fork">
+<img src="https://img.shields.io/badge/FORK_REPO-success?style=for-the-badge"/>
+</a><a href="https://github.com/naveedahmed35581-arch/Naveed-MD">
+<img src="https://img.shields.io/badge/GITHUB_REPOSITORY-blue?style=for-the-badge"/>
+</a></p>---
+
+🚀 DEPLOYMENT
+
+<p align="center"><a href="https://render.com">
+<img src="https://img.shields.io/badge/RENDER-black?style=for-the-badge"/>
+</a><a href="https://heroku.com">
+<img src="https://img.shields.io/badge/HEROKU-purple?style=for-the-badge"/>
+</a><a href="https://koyeb.com">
+<img src="https://img.shields.io/badge/KOYEB-blue?style=for-the-badge"/>
+</a></p>---
+
+📦 BOT FEATURES
+
+FEATURE| STATUS
+Multi Device| ✅
+Pair Code| ✅
+Session Login| ✅
+Public Mode| ✅
+Auto Reconnect| ✅
+Group Commands| ✅
+Owner Commands| ✅
+
+---
+
+📢 SUPPORT
+
+Join Official Channel For Updates.
+
+https://whatsapp.com/channel/0029Vawbj7e5kg7AFF5MuZ28
