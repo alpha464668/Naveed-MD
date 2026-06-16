@@ -62,4 +62,30 @@ Owner Commands| ✅
 
 Join Official Channel For Updates.
 
-https://whatsapp.com/channel/0029Vawbj7e5kg7AFF5MuZ28
+https://whatsapp.com/channel/0029Vawbj7e5kg7AFF5MuZ28  ---
+
+📊 PROJECT STATUS
+
+<p align="center"><img src="https://img.shields.io/badge/LANGUAGE-JavaScript-yellow?style=for-the-badge"/><img src="https://img.shields.io/badge/RELEASE-v1.0.0-blue?style=for-the-badge"/><img src="https://img.shields.io/badge/STATUS-ACTIVE-green?style=for-the-badge"/></p>---
+
+⚡ POWERED BY
+
+<p align="center">
+NAVEED MD - WhatsApp Multi Device Bot
+</p><p align="center">
+Made With ❤️ By Naveed
+</p><p align="center">
+🇵🇰 Pakistan
+</p>---
+
+⭐ SUPPORT PROJECT
+
+If you like this project don't forget to:
+
+⭐ Star Repository
+
+🍴 Fork Repository
+
+📢 Join Official Channel
+
+🤝 Share With Friends
