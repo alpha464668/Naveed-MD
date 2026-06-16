@@ -1,33 +1,35 @@
+const group = require("./group");
+
 module.exports = async (sock, m) => {
 try {
 
-    const msg = m.messages[0];
-    if (!msg.message) return;
+const msg = m.messages[0];
+if (!msg.message) return;
 
-    const text =
-        msg.message.conversation ||
-        msg.message.extendedTextMessage?.text || "";
+const text =
+    msg.message.conversation ||
+    msg.message.extendedTextMessage?.text || "";
 
-    const prefix = ".";
+const prefix = ".";
 
-    if (text === prefix + "ping") {
-        await sock.sendMessage(msg.key.remoteJid, {
-            text: "Pong 🏓"
-        });
-    }
+if (text === prefix + "ping") {
+    await sock.sendMessage(msg.key.remoteJid, {
+        text: "Pong 🏓"
+    });
+}
 
-    if (text === prefix + "alive") {
-        await sock.sendMessage(msg.key.remoteJid, {
-            text: "Naveed MD is Alive ✅"
-        });
-    }
+if (text === prefix + "alive") {
+    await sock.sendMessage(msg.key.remoteJid, {
+        text: "Naveed MD is Alive ✅"
+    });
+}
 
-    if (text === prefix + "menu") {
-        await sock.sendMessage(msg.key.remoteJid, {
-            image: {
-                url: "https://bandaheali-cdn.koyeb.app/media/bot_1781626177072.jpeg"
-            },
-            caption: `
+if (text === prefix + "menu") {
+    await sock.sendMessage(msg.key.remoteJid, {
+        image: {
+            url: "https://bandaheali-cdn.koyeb.app/media/bot_1781626177072.jpeg"
+        },
+        caption: `
 
 ╔════════════════════╗
 ║ 🤖 NAVEED MD
@@ -42,6 +44,7 @@ try {
 • .alive
 • .info
 • .menu
+• .group
 
 📢 CHANNEL
 https://whatsapp.com/channel/0029Vawbj7e5kg7AFF5MuZ28
@@ -55,14 +58,19 @@ https://whatsapp.com/channel/0029Vawbj7e5kg7AFF5MuZ28
 });
 }
 
-    if (text === prefix + "info") {
-        await sock.sendMessage(msg.key.remoteJid, {
-            text: `🤖 Bot: Naveed MD\n👑 Owner: Naveed\n⚡ Status: Online`
-        });
-    }
-
-} catch (e) {
-    console.log("Handler Error:", e);
+if (text === prefix + "group") {
+    await sock.sendMessage(msg.key.remoteJid, {
+        text: await group.run()
+    });
 }
 
+if (text === prefix + "info") {
+    await sock.sendMessage(msg.key.remoteJid, {
+        text: `🤖 Bot: Naveed MD\n👑 Owner: Naveed\n⚡ Status: Online`
+    });
+}
+
+} catch (e) {
+console.log("Handler Error:", e);
+}
 };
