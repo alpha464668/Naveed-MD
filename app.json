@@ -1,0 +1,21 @@
+{
+"name": "Naveed-MD",
+"description": "Javascript WhatsApp bot powered by Naveed",
+"logo": "https://cdn-bandaheali.zone.id/edith/alive.jpg",
+"keywords": ["Naveed-MD", "WhatsApp Bot", "Naveed"],
+"success_url": "/",
+"stack": "container",
+"env": {
+"SESSION_ID": {
+"description": "Put your Baileys session-id here (Base64).",
+"required": true,
+"value": ""
+}
+},
+"buildpacks": [
+{
+"url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+}
+],
+"stack": "heroku-24"
+}
