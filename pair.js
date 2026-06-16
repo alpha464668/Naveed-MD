@@ -7,7 +7,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-console.log("🔰 Pairing System Starting...");
+console.log("🔰 Naveed MD Pairing System Starting...");
 
 async function startPairing() {
     const { state, saveCreds } = await useMultiFileAuthState("./session");
@@ -20,13 +20,22 @@ async function startPairing() {
 
     sock.ev.on("creds.update", saveCreds);
 
-    rl.question("📱 Apna WhatsApp number enter karo: ", async (number) => {
+    rl.question("📱 Apna WhatsApp number enter karo (92xxxxxxxxxx): ", async (number) => {
 
-        const code = await sock.requestPairingCode(number);
+        try {
+            const code = await sock.requestPairingCode(number);
 
-        console.log("\n🔑 PAIRING CODE:");
-        console.log(code);
-        console.log("\nWhatsApp → Linked Devices → Link with code");
+            console.log("\n━━━━━━━━━━━━━━━━━━━━━━");
+            console.log("🔑 NAVEED MD PAIR CODE");
+            console.log("━━━━━━━━━━━━━━━━━━━━━━");
+            console.log(code);
+            console.log("━━━━━━━━━━━━━━━━━━━━━━\n");
+
+            console.log("📌 WhatsApp → Linked Devices → Link with code");
+
+        } catch (e) {
+            console.log("❌ Error:", e.message);
+        }
     });
 }
 
