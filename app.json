@@ -1,189 +1,169 @@
 {
-  "name": "Naveed-MD",
-  "description": "Javascript WhatsApp bot powered by Naveed",
-  "logo": "https://cdn-bandaheali.zone.id/edith/alive.jpg",
-  "keywords": ["Naveed-MD", "WhatsApp Bot"],
+  "name": "NAVEED-MD",
+  "description": "Javascript WhatsApp bot powered by NAVEED-MD",
+  "logo": "https://i.postimg.cc/dQ2QTLmr/file-00000000ee3c7207bc8745037a95cfc2.png",
+  "keywords": ["NAVEED-MD", "WhatsApp Bot", "Naveed"],
   "success_url": "/",
+  "stack": "container",
   "env": {
     "SESSION_ID": {
       "description": "Put your Baileys session-id here (Base64).",
       "required": true,
       "value": ""
     },
-    "START_IMG": {
-      "description": "Start image URL.",
+    "STICKER_NAME": {
+      "description": "Type your sticker pack name.",
       "required": false,
-      "value": "https://cdn.inprnt.com/thumbs/5d/0b/5d0b7faa113233d7c2a49cd8dbb80ea5@2x.jpg"
+      "value": "NAVEED-MD"
     },
-    "AUTO_STATUS_SEEN": {
-      "description": "Automatically view status updates.",
+    "OWNER_NAME": {
+      "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "true"
+      "value": "NAVEED-MD"
     },
-    "AUTO_STATUS_REPLY": {
-      "description": "Automatically reply to status updates.",
+    "OWNER_NUMBER": {
+      "description": "Put the owner number for bot.",
       "required": false,
-      "value": "false"
+      "value": "923213231887"
     },
-    "AUTO_STATUS_REACT": {
-      "description": "Automatically react to status updates.",
-      "required": false,
-      "value": "false"
-    },
-    "AUTO_STATUS_MSG": {
-      "description": "Message to send when status is viewed.",
-      "required": false,
-      "value": "*SEEN YOUR STATUS BY NAVEED-MD 🇵🇰*"
-    },
-    "WELCOME": {
-      "description": "Enable welcome message for new group members.",
-      "required": false,
-      "value": "false"
-    },
-    "ADMIN_EVENTS": {
-      "description": "Enable admin events notifications.",
-      "required": false,
-      "value": "false"
+    "MENU_IMAGE_URL": {
+      "description": "Add image URL for menu and mention replies.",
+      "required": true,
+      "value": "https://i.postimg.cc/dQ2QTLmr/file-00000000ee3c7207bc8745037a95cfc2.png"
     },
     "PREFIX": {
-      "description": "Bot command prefix.",
+      "description": "Paste your bot prefix. Avoid null prefix.",
       "required": false,
       "value": "."
     },
-    "MENTION_REPLY": {
-      "description": "Enable reply when bot is mentioned.",
-      "required": false,
-      "value": "false"
-    },
-    "MENU_IMAGE_URL": {
-      "description": "URL of the menu image.",
-      "required": false,
-      "value": "https://bandaheali-cdn.koyeb.app/bandaheali/smd.jpg"
-    },
-    "BOT_NAME": {
-      "description": "Name of the bot.",
-      "required": false,
-      "value": "NAVEED-MD"
-    },
-    "STICKER_NAME": {
-      "description": "Default sticker pack name.",
-      "required": false,
-      "value": "NAVEED-MD"
-    },
-    "CUSTOM_REACT": {
-      "description": "Enable custom reactions.",
-      "required": false,
-      "value": "false"
-    },
-    "CUSTOM_REACT_EMOJIS": {
-      "description": "Emojis list for custom reactions.",
-      "required": false,
-      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
-    },
-    "DELETE_LINKS": {
-      "description": "Delete links sent in groups.",
-      "required": false,
-      "value": "false"
-    },
-    "OWNER_NUMBER": {
-      "description": "Owner's WhatsApp number.",
-      "required": false,
-      "value": "923035512967"
-    },
-    "OWNER_NAME": {
-      "description": "Owner's name.",
-      "required": false,
-      "value": "NAVEED-MD"
-    },
-    "DESCRIPTION": {
-      "description": "Bot description.",
-      "required": false,
-      "value": "*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴀᴠᴇᴇᴅ-ᴍᴅ*"
-    },
-    "READ_MESSAGE": {
-      "description": "Automatically read all messages.",
-      "required": false,
-      "value": "false"
-    },
-    "AUTO_REACT": {
-      "description": "Automatically react to messages.",
-      "required": false,
-      "value": "false"
-    },
-    "ANTI_BAD": {
-      "description": "Enable anti-bad words filter.",
-      "required": false,
-      "value": "false"
-    },
     "MODE": {
-      "description": "Bot mode (public/private).",
+      "description": "Bot work mode: public / private / inbox / group.",
       "required": false,
       "value": "public"
     },
-    "ANTI_LINK": {
-      "description": "Enable anti-link protection.",
-      "required": false,
+    "ALWAYS_ONLINE": {
+      "description": "Set true if you want always online mode.",
+      "required": true,
+      "value": "false"
+    },
+    "AUTO_STATUS_SEEN": {
+      "description": "Set true to auto-view statuses.",
+      "required": true,
       "value": "true"
     },
-    "AUTO_STICKER": {
-      "description": "Enable auto-sticker replies.",
-      "required": false,
+    "AUTO_STATUS_REACT": {
+      "description": "Set true to auto-react to status.",
+      "required": true,
+      "value": "true"
+    },
+    "AUTO_STATUS_REPLY": {
+      "description": "Set true for automatic replies to status.",
+      "required": true,
       "value": "false"
     },
-    "AUTO_REPLY": {
-      "description": "Enable auto-reply.",
+    "AUTO_STATUS_MSG": {
+      "description": "Message to send on status auto-reply.",
+      "required": true,
+      "value": "*SEEN YOUR STATUS BY NAVEED-MD 🇵🇰*"
+    },
+    "BOT_NAME": {
+      "description": "Type the bot name here.",
       "required": false,
+      "value": "NAVEED-MD"
+    },
+    "DELETE_LINK": {
+      "description": "Set true to delete group links automatically.",
+      "required": true,
       "value": "false"
     },
-    "ALWAYS_ONLINE": {
-      "description": "Keep bot status always online.",
-      "required": false,
+    "ANTI_LINK": {
+      "description": "Set true to remove members posting group links.",
+      "required": true,
+      "value": "false"
+    },
+    "ANTI_MEDIA": {
+      "description": "Set true to remove members posting medias in group.",
+      "required": true,
+      "value": "false"
+    },
+    "MENTION_REPLY": {
+      "description": "Set true for if someOne tag You In group bot will send and audio why the tag you.",
+      "required": true,
+      "value": "false"
+    },
+    "ADMIN_EVENTS": {
+      "description": "Set true to notify when admins promote/demote.",
+      "required": true,
+      "value": "false"
+    },
+    "WELCOME": {
+      "description": "Set true to enable welcome/goodbye messages.",
+      "required": true,
+      "value": "false"
+    },
+    "ANTI_CALL": {
+      "description": "Set true to auto-reject calls.",
+      "required": true,
+      "value": "false"
+    },
+    "ANTI_BAD_WORD": {
+      "description": "Set true to auto-delete bad words.",
+      "required": true,
+      "value": "false"
+    },
+    "AUTO_RECORDING": {
+      "description": "Set true to enable auto-recording presence.",
+      "required": true,
       "value": "false"
     },
     "AUTO_TYPING": {
-      "description": "Show typing status automatically.",
-      "required": false,
+      "description": "Set true to enable auto-typing presence.",
+      "required": true,
       "value": "false"
     },
-    "READ_CMD": {
-      "description": "Automatically read commands.",
-      "required": false,
+    "AUTO_REACT": {
+      "description": "Set true to react to every message.",
+      "required": true,
       "value": "false"
     },
-    "DEV": {
-      "description": "Developer's WhatsApp number.",
-      "required": false,
-      "value": "923035512967"
-    },
-    "ANTI_CALL": {
-      "description": "Reject incoming calls automatically.",
-      "required": false,
+    "CUSTOM_REACT": {
+      "description": "Set true to enable custom emoji reactions.",
+      "required": true,
       "value": "false"
     },
-    "REJECT_MSG": {
-      "description": "Message sent when a call is rejected.",
+    "CUSTOM_REACT_EMOJIS": {
+      "description": "Custom emojis to use in reactions.",
       "required": false,
-      "value": "Your Call Was Reject by bot"
-    },
-    "ANTI_DELETE": {
-      "description": "Enable anti-delete protection.",
-      "required": false,
-      "value": "true"
+      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
     },
     "ANTI_DEL_PATH": {
-      "description": "Path to send deleted messages.",
-      "required": false,
-      "value": "same"
+      "description": "Use 'same' to resend deleted msg in same chat, otherwise 'inbox'.",
+      "required": true,
+      "value": "inbox"
     },
-    "AUTO_RECORDING": {
-      "description": "Show recording status automatically.",
-      "required": false,
+    "ANTI_DELETE": {
+      "description": "Set true to show deleted messages.",
+      "required": true,
       "value": "false"
     },
-    "ANTI_LINK_ACTION": {
-      "description": "Action for anti-link (warn/kick/delete).",
-      "required": false,
-      "value": "delete"
+    "READ_MESSAGE": {
+      "description": "Set true to mark all messages as read.",
+      "required": true,
+      "value": "false"
+    },
+    "HEROKU_API": {
+      "description": "Heroku API token",
+      "required": true
+    },
+    "HEROKU_APP": {
+      "description": "Heroku App name",
+      "required": true
     }
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
 }
