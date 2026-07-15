@@ -1,12 +1,12 @@
 {
-  "name": "Naveed-MD",
+  "name": "NAVEED-MD",
   "version": "5.0.0",
-  "description": "WhatsApp Bot created By Naveed.",
+  "description": "WhatsApp Bot created By NAVEED-MD.",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Naveed-MD",
-    "stop": "pm2 stop Naveed-MD",
-    "restart": "pm2 restart Naveed-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name NAVEED-MD",
+    "stop": "pm2 stop NAVEED-MD",
+    "restart": "pm2 restart NAVEED-MD"
   },
   "keywords": [
     "naveed-md",
