@@ -1,6 +1,10 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=70&pause=500&color=008080&center=true&width=1150&height=200&lines=PLEASE-FORK-STAR-BOT-REPO" alt="Typing SVG" /></a>
   </div>
-<a><img src='https://i.ibb.co/gLVDLnq6/file-00000000ee3c7207bc8745037a95cfc2.png'/></a>
+
+<!-- IMAGE FIXED WITH WIDTH -->
+<p align="center">
+  <img src='https://i.ibb.co/gLVDLnq6/file-00000000ee3c7207bc8745037a95cfc2.png' width="300" height="300" style="border-radius: 50%;"/>
+</p>
 
 <p align="center">
   <a href="https://github.com/naveedahmed35581-arch"><img title="Developer" src="https://img.shields.io/badge/Author-Naveed--MD-FF00FF.svg?style=big-square&logo=github" /></a>
