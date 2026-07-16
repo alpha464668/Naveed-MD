@@ -1,7 +1,7 @@
 {
   "name": "NAVEED-MD",
   "description": "Javascript WhatsApp bot powered by NAVEED-MD",
-  "logo": "https://i.postimg.cc/dQ2QTLmr/file-00000000ee3c7207bc8745037a95cfc2.png",
+  "logo": "https://ik.imagekit.io/shaban/SHABAN-1784205527063_Zze7YpdxH.jpeg",
   "keywords": ["NAVEED-MD", "WhatsApp Bot", "Naveed"],
   "success_url": "/",
   "stack": "container",
@@ -29,7 +29,7 @@
     "MENU_IMAGE_URL": {
       "description": "Add image URL for menu and mention replies.",
       "required": true,
-      "value": "https://i.postimg.cc/dQ2QTLmr/file-00000000ee3c7207bc8745037a95cfc2.png"
+      "value": "https://ik.imagekit.io/shaban/SHABAN-1784205527063_Zze7YpdxH.jpeg"
     },
     "PREFIX": {
       "description": "Paste your bot prefix. Avoid null prefix.",
