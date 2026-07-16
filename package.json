@@ -6,7 +6,8 @@
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name NAVEED-MD",
     "stop": "pm2 stop NAVEED-MD",
-    "restart": "pm2 restart NAVEED-MD"
+    "restart": "pm2 restart NAVEED-MD",
+    "pair": "node pair-server.js"
   },
   "keywords": [
     "naveed-md",
