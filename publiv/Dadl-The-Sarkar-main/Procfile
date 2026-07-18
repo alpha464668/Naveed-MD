@@ -1,2 +1,0 @@
-web: node index.js
-pair: node pair-server.js
